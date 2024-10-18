@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animatørens Håndbog</title>
+    <link rel="stylesheet" href="/css/styleressourcer.css">
+    <link rel="icon" type="image/x-icon" href="/img/Logo2.png">
+
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="index.html" target="blank" >
+                <img src="/img/Logo2.png" alt="Logo" class="logo"> 
+            </a>
+        <a href="animation.html">Modellering</a>
+        <a href="animation.html">Animation</a>
+        <a href="animation.html">Rendering</a>
+        <a href="terminologi.html">Terminologi</a>
+        <a href="ressourcer.html">Ressourcer</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Åben Navigation</button>
+    </div>
+
+    
+    <section class="resource-section">
+        <div class="resource-image">
+            <img src="/img/blendersplash.png" alt="Blender Software">
+        </div>
+        <div class="resource-text">
+            <h2>Blender - Gratis 3D-animationssoftware</h2>
+            <p>Blender er et kraftfuldt og gratis open-source værktøj til 3D-modellering, animation og rendering. Det bruges af både begyndere og professionelle, og det er en fantastisk ressource til at lære og skabe 3D-kunst.</p>
+            <a href="https://www.blender.org" target="_blank">Besøg Blender's hjemmeside</a>
+        </div>
+    </section>
+
+    
+    <section class="resource-section reverse">
+        <div class="resource-text">
+            <h2>Drawn to Life - af Walt Stanchfield</h2>
+            <p>*Drawn to Life* er en samling af Walt Stanchfields foredrag til Disney-animatorer. Bogen er et must-read for enhver, der ønsker at mestre animationens kunst med fokus på dynamisk bevægelse og liv i tegningerne.</p>
+            <a href="https://www.amazon.com/Drawn-Life-Course-Classic-Animation/dp/0240810961" target="_blank">Læs mere om bogen</a>
+        </div>
+        <div class="resource-image">
+            <img src="/img/Drawntolife.png" alt="Drawn to Life Book">
+        </div>
+    </section>
+
+    
+    <section class="email-signup-section">
+        <h2>Tilmeld dig vores nyhedsbrev</h2>
+        <p>Få de nyeste tips, tutorials og ressourcer direkte i din indbakke!</p>
+        <form id="email-signup-form">
+            <div class="form-group">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="submit-btn">Tilmeld</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animatørens Håndbog</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/Logo2.png">
+
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="index.html">
+                <img src="/img/Logo2.png" alt="Logo" class="logo"> 
+            </a>
+        <a href="animation.html">Modellering</a>
+        <a href="animation.html">Animation</a>
+        <a href="animation.html">Rendering</a>
+        <a href="terminologi.html">Terminologi</a>
+        <a href="ressourcer.html">Ressourcer</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Åben Navigation</button>
+    </div>
+        <!-- Background Video -->
+         
+        <video autoplay muted loop class="background-video">
+            <source src="/video/Bogrender.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Velkommen til Animatørens Håndbog! </h1>
+            <p>Her vil du finde et variat af guides og indhold der alt sammen har målet af at gøre din rejse ind i 3D-verdenen nemmere og mere behagelig.</p>
+            <button onclick="scrollToGallery()">Begynd</button>
+        </div>
+
+        <div class="gallery-section"></div>
+    <div class="gallery" id="gallery">
+        <div class="image-container">
+            <a href="animation.html">
+            <img src="/img/Modellering.png" alt="Image 1">
+            </a>
+            <div class="info-box">Modellering er grundlaget for enhver 3D-produktion. Det handler om at skabe de digitale objekter, som senere kan animeres og rendes. Ved hjælp af værktøjer som Blender eller Maya kan du forme alt fra simple geometriske former til komplekse karakterer og miljøer.</div>
+        </div>
+        <div class="image-container">
+            <a href="animation.html">
+            <img src="/img/Animation.png" alt="Image 2">
+            </a>
+            <div class="info-box">Animation bringer dine modeller til live ved at tilføje bevægelse. Her arbejder du med keyframes og bevægelsesprincipper for at skabe flydende, naturlige handlinger, hvad enten det er en karakter, der går, eller et objekt, der bevæger sig gennem et miljø.</div>
+        </div>
+        <div class="image-container">
+            <a href="animation.html">
+            <img src="/img/Rendering.png" alt="Image 3">
+            </a>
+            <div class="info-box">Rendering er den proces, hvor 3D-scenen omdannes til et færdigt billede eller en video. Det er her, belysning, skygger, teksturer og effekter kombineres for at skabe det endelige udtryk, der kan bruges i film, spil eller andre medieprojekter.</div>
+        </div>
+        <div class="image-container">
+            <a href="ressourcer.html">
+            <img src="/img/Ressourcer.png" alt="Image 4">
+            </a>
+            <div class="info-box">Her finder du de bedste værktøjer og læringsmaterialer til at udvide dine 3D-kundskaber. Fra gratis software som Blender til inspirerende tutorials og bøger, er denne sektion spækket med ressourcer, der hjælper dig med at mestre modellering, animation og rendering.</div>
+        </div>
+    </div>
+
+            <p>&copy; 2024 Animatørens Håndbog. Alle rettigheder forbeholdes.</p>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

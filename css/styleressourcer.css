@@ -1,0 +1,184 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #141414;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    position: fixed;    
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #141414;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    z-index: 1000;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.logo  {
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Resource Section */
+.resource-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.resource-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.resource-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 4, 4);
+    margin-left: 350px;
+}
+
+.resource-text {
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 350px;
+}
+
+.resource-text h2 {
+    margin-bottom: 10px;
+}
+
+.resource-text p {
+    margin-bottom: 15px;
+}
+
+.resource-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-text a:hover {
+    text-decoration: underline;
+}
+
+/* Email Sign-Up Section */
+.email-signup-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+}
+
+.email-signup-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.email-signup-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+button.submit-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.submit-btn:hover {
+    background-color: #0056b3;
+}

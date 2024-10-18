@@ -1,0 +1,163 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #141414;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    position: fixed;    
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #141414;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    background-color: #f7f7f7;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 32px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-section button {
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-section button:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1100px;
+}
+
+.gallery img {
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-box {
+    width: 350px;
+    position: relative;
+    bottom: -50px; /* Initially hidden below the container */
+    left: -9px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.image-container:hover .info-box {
+    bottom: 0; /* Slide up into view */
+    opacity: 1; /* Fade in */
+}
+
+.logo  {
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+}

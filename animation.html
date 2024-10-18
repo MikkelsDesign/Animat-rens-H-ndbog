@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animatørens Håndbog</title>
+    <link rel="stylesheet" href="/css/stylelektion.css">
+    <link rel="icon" type="image/x-icon" href="/img/Logo2.png">
+
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="index.html" target="blank" >
+                <img src="/img/Logo2.png" alt="Logo" class="logo"> 
+            </a>
+        <a href="animation.html">Modellering</a>
+        <a href="animation.html">Animation</a>
+        <a href="animation.html">Rendering</a>
+        <a href="terminologi.html">Terminologi</a>
+        <a href="ressourcer.html">Ressourcer</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Åben Navigation</button>
+    </div>
+
+    <!-- Title Section -->
+    <div class="title-section">
+        <h1>Velkommen til Animations lektionen</h1>
+        <div class="title-box"></div>
+    </div>
+
+    <!-- Section 1: Video Left, Text Right -->
+    <section class="content-section">
+        <div class="video-section">
+            <video autoplay muted loop>
+                <source src="/video/Keyframes.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="text-section">
+            <h2>Keyframes og Easing</h2>
+            <br>
+            <p>Keyframes er grundlaget for al animation. 
+                <br>
+                <br>
+                En keyframe markerer et bestemt tidspunkt i en animation, hvor et objekt eller en karakter har en bestemt position, rotation eller form.
+                <br>
+                <br>
+                Programmet fylder derefter automatisk de mellemliggende frames, også kaldet "tweening", for at skabe en glidende bevægelse.
+                <br>
+                <br>
+                 Dette gør det muligt at skabe flydende overgange uden at skulle tegne hver eneste frame manuelt, som man gjorde i traditionel håndanimation.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Text Left, Video Right -->
+    <section class="content-section reverse">
+        <div class="text-section">
+            <h2>Anticipation</h2>
+            <br>
+            <p>Anticipation er et af de vigtigste principper i animation. Det går ud på at skabe en forberedende bevægelse, der forudsiger hovedhandlingen. 
+                <br>
+                <br>
+                For eksempel, før en karakter springer, vil de først bøje sig ned. 
+                <br>
+                <br>
+                Dette skaber forventning hos seeren og gør animationen mere realistisk. 
+                <br>
+                <br>
+                Uden anticipation kan bevægelser virke pludselige og unaturlige, hvilket reducerer troværdigheden.
+                <br>
+                <br>
+                Billede Credit: "Anticipation" af Chris Hurtt.
+
+        
+            </p>
+
+        </div>
+        <div class="video-section">
+            <img src="/img/Anticipation.webp" alt="Video 2" class="video">
+        </div>
+    </section>
+
+    <!-- Section 3: Video Left, Text Right -->
+    <section class="content-section">
+        <div class="video-section">
+            <video autoplay muted loop>
+                <source src="/video/FPS.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="text-section">
+            <h2>Frame Rate</h2>
+            <br>
+            <p>Frame rate eller billeder per sekund (FPS) er et afgørende aspekt af animation, der bestemmer, hvor mange individuelle billeder der afspilles i sekundet. Typiske frame rates er:
+                <br>
+                <br>
+                12 fps: Ofte brugt til simple animationer eller for at opnå et mere stiliseret og hakket look.
+                <br>
+                24 fps: Standard for film og tv, hvilket giver en mere naturlig, filmisk følelse.
+                <br>
+                60 fps: Bruges ofte i computerspil og moderne animationer, hvor glatte, flydende bevægelser er nødvendige.</p>
+        </div>
+    </section>
+
+    <!-- Task Section -->
+    <div class="task-section">
+        <div class="task-box">
+            <h3>Yderligere research: Smear Frames</h3>
+            <p>
+                Smear frames er en sjov og kreativ teknik, der bruges i animation til at skabe en illusion af hurtig bevægelse ved at "strække" eller "forvrænge" objekter eller karakterer mellem keyframes. Denne teknik tilføjer energi og dynamik til en scene, som ellers kunne virke stiv. Det er værd at udforske og eksperimentere med i dine egne animationer for at forstå, hvordan små visuelle tricks kan påvirke bevægelsens følelse.
+                Tag et kig på smear frames og se, hvordan du kan bruge dem til at gøre dine animationer mere livlige!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
